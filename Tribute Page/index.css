@@ -1,0 +1,91 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eaeaea; /* Color de fondo claro */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#main-content {
+    background-color: #fff; /* Fondo blanco */
+    border: 5px solid #000; /* Bordes negros */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#tribute-info {
+    font-size: 1.1em;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+}
+
+ul li {
+    background: #ddd; /* Color de fondo claro para los logros */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #000; /* Borde izquierdo negro */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007acc;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el diseño de tablero de ajedrez */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(45deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #fff 75%, transparent 75%, transparent),
+        linear-gradient(45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);
+    background-size: 40px 40px; /* Tamaño de los cuadrados del tablero */
+    z-index: -1; /* Colocar detrás del contenido */
+    opacity: 0.1; /* Hacer el tablero sutil */
+}
